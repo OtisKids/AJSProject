@@ -1,0 +1,28 @@
+{
+  "name": "ProjectAndrew",
+  "version": "1.0.0",
+  "description": "This is our prototype for first app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OtisKids/AndGregApp.git"
+  },
+  "keywords": [
+    "1stApp"
+  ],
+  "author": "Greg Butheau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OtisKids/AndGregApp/issues"
+  },
+  "homepage": "https://github.com/OtisKids/AndGregApp",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "mongoose": "^4.3.6"
+  }
+}
