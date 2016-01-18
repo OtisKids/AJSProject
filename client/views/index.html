@@ -12,9 +12,19 @@
 	
 	<!-- Deals views-->
 	<div ng-controller="dealCtlr">
-		<h1>Currently there are {{nDealsAround}} deals around you !!</h1>
-	</div>
-	
+		<h1>Currently there are {{deals.length}} deals around you !!</h1>
+        <ul>
+          <li ng-repeat="deal in deals">
+            {{deal.name}}
+          </li>
+        </ul>
+		
+        <form ng-submit="createDeal()">
+          <input type="text" placeholder="Deal name" ng-model="dealName"></input>
+          <button type="submit">Add</button>
+        </form>
+		
+      </div>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
 
