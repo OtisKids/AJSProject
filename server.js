@@ -15,8 +15,8 @@ app.get('/', function (req, res) {
 app.use('/js', express.static(__dirname + '/client/js'));
 
 //REST API
-app.get('/api/deals', dealCtlr.list);
-app.post('/api/deals', dealCtlr.create);
+app.get('/api/deal', dealCtlr.list);
+app.post('/api/deal', dealCtlr.create);
 
 app.listen(3000, function() {
   console.log('I\'m Listening...');

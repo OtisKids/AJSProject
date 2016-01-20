@@ -1,4 +1,4 @@
-var Deals = require('../models/deal');
+var Deal = require('../models/deal');
 
 module.exports.create = function (req, res) {
   var deal = new Deal(req.body);

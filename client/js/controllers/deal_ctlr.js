@@ -1,5 +1,5 @@
 app.controller('dealCtlr', ['$scope', '$resource', function ($scope, $resource) {
-  var Deal = $resource('/api/deals');
+  var Deal = $resource('/api/deal');
 
   Deal.query(function (results) {
     $scope.deals = results;
@@ -8,9 +8,9 @@ app.controller('dealCtlr', ['$scope', '$resource', function ($scope, $resource) 
   $scope.deals = []
 
   $scope.createDeal = function () {
-    var Deal = new Deal();
-    Deal.name = $scope.dealName;
-    Deal.$save(function (result) {
+    var deal = new Deal();
+    deal.name = $scope.dealName;
+    deal.$save(function (result) {
       $scope.deals.push(result);
       $scope.dealName = '';
     });
